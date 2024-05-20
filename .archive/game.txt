@@ -1,0 +1,18 @@
+calculate the new x y pos
+put ghost to new x y pos
+if ghost is in collision with floor and player direction is down and floor is under the player{
+    player vpeed = 0
+    player new x y on the floor
+}
+if ghost is in collision with solid{
+    player vspeed = 0
+    player new x y adjacent to the solid
+}
+if ghost is in collision with slope and player direction is down and slope is under the player{
+    player vspeed = 0
+    player new x y adjacent to the slope according to the slope angle and the x of player
+}
+if ghost is in collision with moving platform and player direction is down and moving platform is under the player{
+    player vspeed = 0
+    player new x y adjacent to the moving platform according to the moving platform next x y
+}
